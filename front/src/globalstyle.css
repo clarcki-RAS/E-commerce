@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button_{
+    @apply rounded-md px-20 py-3 tracking-wider text-center hover:bg-stone-600 hover:text-stone-200  hover:border-stone-300 font-light cursor-pointer bg-stone-100 border-2 border-stone-600 transition ease-in duration-150;
+    @apply disabled:text-stone-600 disabled:bg-stone-600 disabled:cursor-default
+}
+
+.banner{
+    background-image: url("../public/assets/images/shirt-mockup-concept-with-plain-clothing.jpg");
+    
+}
+.signin {
+    @apply text-stone-500 hover:scale-125 transform hover:text-orange-900 underline transition ease-out duration-100 cursor-pointer
+}
+
+.button_nav{
+    @apply flex items-center px-6 py-2;
+    @apply hover:text-stone-700 text-stone-500 ;
+    @apply hover:bg-white;
+    @apply transition-colors duration-300 transform rounded-e-lg ;
+}
+
+.buttonDel{
+    @apply rounded-md px-20 font-light py-3 transition ease-in duration-150;
+    @apply bg-pink-50 border-2 border-pink-700 text-pink-700;
+    @apply hover:bg-pink-700 hover:text-pink-50  hover:border-pink-700;
+}
+
+.button_navI{
+    @apply w-5 ms-6 h-5
+}
+
+.cart_btn{
+    @apply bg-stone-50 hover:bg-stone-500; 
+    @apply border border-stone-500 hover:border-0;
+    @apply font-bold px-2 text-2xl transition ease-in-out duration-100;
+    @apply h-6 w-9 rounded-md cursor-pointer;
+    @apply hover:text-stone-50 text-stone-500 
+}
+
+.pagination{
+    opacity: 0;
+    animation: paginationOpacity 600ms ease-out forwards;
+}
+
+.modalReveal {
+    opacity: 0;
+    animation: paginationOpacity 200ms ease-in forwards ;
+}
+
+.button_cancel{
+    @apply rounded-lg font-light cursor-pointer py-2 transition ease-in duration-150;
+    @apply hover:bg-gray-600 bg-gray-100;
+    @apply hover:text-gray-200 ;
+    @apply border border-gray-600;
+}
+
+.cart_date{
+    @apply px-6 py-3 text-lg;
+    @apply hover:text-stone-700  ;
+    @apply hover:bg-white border border-stone-300 hover:border-stone-500;
+    @apply transition-colors duration-300 transform rounded-e-lg ;
+}
+
+@keyframes paginationOpacity{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.1;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    30%{
+        opacity: 0.3;
+    }
+    40%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    70%{
+        opacity: 0.7;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    90%{
+        opacity: 0.9;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
